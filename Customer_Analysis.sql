@@ -1,13 +1,5 @@
 -- Customer analysis
-/*
-Customer wants a report with :
-  - Buyer id
-  - First order date
-  - Most recent order date
-  - Total money spent
-  - Preferred movie rating
-  - All ratings they rent from
-*/
+
 WITH 
 -- Find the customer_id, first order and most recent order of each customer
 	order_cte AS
@@ -62,29 +54,3 @@ JOIN preferred_rating_cte pref
 JOIN all_ratings_cte arat
 	ON ord.customer_id = arat.customer_id
 ;
-
--- Caculate total revneue
-SELECT SUM(amount) AS total_revenue
-FROM payment
-;
-
--- Calculate total revenue based on store
-SELECT store_id, SUM(amount)
-FROM payment p
-JOIN staff s
-	ON p.staff_id = s.staff_id
-GROUP BY store_id
-;
-
--- Calculate total revenue based on month
-WITH month_cte AS(
-SELECT amount, EXTRACT(MONTH FROM payment_date) AS month
-FROM payment
-)
-SELECT month, SUM(amount) AS total_revenue
-FROM month_cte
-GROUP BY month
-ORDER BY total_revenue DESC
-;
-
-
