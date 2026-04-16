@@ -7,7 +7,7 @@ This project analyzes the DVD Rental Database, a generated database for a fictit
 ## Business Objectives
 - Understand customer purchasing behaviour
 - Identify inventory inefficiencies
-- Analyze revenue drivers across filmss, categories, and actors
+- Analyze revenue drivers across films, categories, and actors
 - Evaluate demand across stores
 
 ## Analysis Breakdown
@@ -36,7 +36,7 @@ This project analyzes the DVD Rental Database, a generated database for a fictit
   - Actors with more films do not always generate higher revenue
   - Revenue contribution is concentrated rather than evenly distributed across large casts
 
-## Business Application
+## Business Applications
 - Reallocate inventories towards high-demand but understocked films
 - Reduce low performing inventory items
 - Ensure popular films are available across all stores
