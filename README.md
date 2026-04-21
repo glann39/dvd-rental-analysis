@@ -55,7 +55,7 @@ The analysis simulates a real-world business scenario by identifying operational
 - Reallocate inventory toward high-demand but understocked films.
 - Reduce or eliminate consistently low-performing inventory items.
 - Ensure popular films are available across all store locations to maximize accessibility.
-- Focus acquisition budgets on top-performing categories and hight-performing actors (high revenue + high reach).
+- Focus acquisition budgets on top-performing categories and high-performing actors (high revenue + high reach).
 - Implement targeted promotions for niche actors with a dedicated fanbase (high revenue + low reach) to expand their audience.
 
 
