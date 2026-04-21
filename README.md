@@ -12,39 +12,49 @@ This project analyzes the DVD Rental Database, a generated database for a fictit
 - Measure audience reach and content penetration
 
 ## File Description
-- `customer_analysis.sql`
+- [customer_analysis.sql](scripts/customer_analysis.sql): Customer segmentation, lifetime value metrics, rental frequency, and preferred content analysis.
+- [inventory_analysis.sql](scripts/inventory_analysis.sql): Stock evaluation, store-level comparisons, and `rent_per_copy` efficiency metrics.
+- [performance_analysis.sql](scripts/performance_analysis.sql): Revenue attribution across categories, films, ratings, and actors. Includes audience reach metrics.
 
 ## Analysis Breakdown
-- Customer Analysis
-  - Find the first and most recent purchase
-  - Calculate total spending
-  - Identify preferred movie ratings and content diversity
-- Inventory Analysis
-  - Identify films not available in store
-  - Identify unused items
-  - Evaluate supply vs demand
-- Performance Analysis
-  - Identify popular and top grossing film categories
-  - Analyze top performing actors based on revenue
-  - Measure audience reach
-  - Evaluate revenue distribution per film and per actor
+
+### Customer Analysis
+- Calculate first and most recent purchase dates per customer
+- Compute total lifetime spending and rental frequency
+- Identify preferred movie ratings and category diversity per customer
+
+### Inventory Analysis
+- Identify films not stocked in any store (lost revenue opportunity)
+- Identify inventory items with zero rentals
+- Calculate `rent_per_copy` to evaluate supply vs demand efficiency
+- Compare inventory composition and performance between Store 1 and Store 2
+
+### Performance Analysis
+- Identify top-grossing and most-rented film categories
+- Identify top-grossing and most-rented actors
+- Measure actor audience reach
+- Attribute film revenue to individual actors
 
 ## Key Insights
-- Inventory Inefficiencies
-  - Several films are not stocked in any store, limiting potential revenue
-  - Some films are high in demand but only stocked in one store
-- Supply Imbalance
-  - Some films show high rent_per_copy, suggesting that they might be understocked
-  - Some films show low rent_per_copy, suggesting that they might be overstocked
-- Content Performance
-  - Actors with more films do not always generate higher revenue
-  - Revenue contribution is concentrated rather than evenly distributed across large casts
+
+### Inventory Inefficiencies
+- Several catalog films are not stocked in any store, representing revenue opportunities if ordered.
+- Some high-demand films are stocked in only one store location, representing potential revenue loss.
+
+### Supply Imbalance
+- Films with high `rent_per_copy` are likely understocked, additional copies could generate more revenue. 
+- Films with low `rent_per_copy` are likely overstocked or unpopular, inventory could be reduced or promotional discounting.
+  
+### Content Performance
+- Actors appearing in many ensemble films often generate less attributed revenue than those in films with fewer high-performing actors. 
+- Some actors have broad audience appeal (high reach) but low revenue per appearance. Others have niche, dedicated fan bases (low reach, high revenue). This can inform more precise marketing and acquisition strategy.
 
 ## Business Applications
-- Reallocate inventories towards high-demand but understocked films
-- Reduce low performing inventory items
-- Ensure popular films are available across all stores
-- Focus on high performing categories and actors 
+- Reallocate inventory toward high-demand but understocked films.
+- Reduce or eliminate consistently low-performing inventory items.
+- Ensure popular films are available across all store locations to maximize accessibility.
+- Focus acquisition budgets on top-performing categories and hight-performing actors (high revenue + high reach).
+- Implement targeted promotions for niche actors with a dedicated fanbase (high revenue + low reach) to expand their audience.
 
 
 
