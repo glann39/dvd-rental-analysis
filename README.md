@@ -17,6 +17,7 @@ The analysis simulates a real-world business scenario by identifying operational
 - [customer_analysis.sql](scripts/customer_analysis.sql): Customer segmentation, lifetime value metrics, rental frequency, and preferred content analysis.
 - [inventory_analysis.sql](scripts/inventory_analysis.sql): Stock evaluation, store-level comparisons, and `rent_per_copy` efficiency metrics.
 - [performance_analysis.sql](scripts/performance_analysis.sql): Revenue attribution across categories, films, ratings, and actors. Includes audience reach metrics.
+- [geographical_analysis.sql](scripts/geographic_analysis.sql): Customer distribution and revenue performance by country. Identifies volume markets vs premium markets.
 
 ## Analysis Breakdown
 
@@ -37,6 +38,11 @@ The analysis simulates a real-world business scenario by identifying operational
 - Measure actor audience reach
 - Attribute film revenue to individual actors
 
+### Geographical Analysis
+- Identify customer distribution across countries
+- Measure total revenue generated per country
+- Calculate revenue per customer by country to distinguish volume markets from premium markets
+
 ## Key Insights
 
 ### Inventory Inefficiencies
@@ -51,13 +57,18 @@ The analysis simulates a real-world business scenario by identifying operational
 - Actors appearing in many ensemble films often generate less attributed revenue than those in films with fewer high-performing actors. 
 - Some actors have broad audience appeal (high reach) but low revenue per appearance. Others have niche, dedicated fan bases (low reach, high revenue). This can inform more precise marketing and acquisition strategy.
 
+### Geographical Performance
+- Customer distribution is highly concentrated in a few countries.
+- Some smaller markets show high revenue per customer, indicating premium market.
+- Revenue per customer varies by country, suggesting different pricing or content preferences across regions.
+
 ## Business Applications
 - Reallocate inventory toward high-demand but understocked films.
 - Reduce or eliminate consistently low-performing inventory items.
 - Ensure popular films are available across all store locations to maximize accessibility.
 - Focus acquisition budgets on top-performing categories and high-performing actors (high revenue + high reach).
 - Implement targeted promotions for niche actors with a dedicated fanbase (high revenue + low reach) to expand their audience.
-
+- Tailor inventory and marketing strategies by country: broad selection for volume markets and targeted selection for premium markets.
 
 
 
