@@ -4,7 +4,10 @@
 
 This project analyzes the DVD Rental Database, a generated database for a fictitious DVD rental chain, using SQL to explore customer behavior, inventory efficiency, and revenue performance. The database can be downloaded using this [link](https://neon.com/postgresql/postgresql-getting-started/postgresql-sample-database). 
 
-The analysis simulates a real-world business scenario by identifying operational inefficiencies and uncovering actionable insights to improve financial performance. This project is ongoing, I plan to expand it with Excel and Tableau dashboards in the future.
+The analysis simulates a real-world business scenario by identifying operational inefficiencies and uncovering actionable insights to improve financial performance. 
+
+## Tableau Dashboard
+[DVD Rental Performance Dashboard](https://public.tableau.com/views/DVD-Rental/Dashboard1?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Business Objectives
 - Understand customer purchasing behavior and lifetime value
