@@ -1,4 +1,4 @@
-# DVD Rental Data Analysis (SQL Project)
+# DVD Rental Data Analysis
 
 ## Project Overview
 
