@@ -20,7 +20,7 @@ The analysis simulates a real-world business scenario by identifying operational
 - [customer_analysis.sql](scripts/customer_analysis.sql): Customer segmentation, lifetime value metrics, rental frequency, and preferred content analysis.
 - [inventory_analysis.sql](scripts/inventory_analysis.sql): Stock evaluation, store-level comparisons, and `rent_per_copy` efficiency metrics.
 - [performance_analysis.sql](scripts/performance_analysis.sql): Revenue attribution across categories, films, ratings, and actors. Includes audience reach metrics.
-- [geographical_analysis.sql](scripts/geographic_analysis.sql): Customer distribution and revenue performance by country. Identifies volume markets vs premium markets.
+- [geographical_analysis.sql](scripts/geographical_analysis.sql): Customer distribution and revenue performance by country. Identifies volume markets vs premium markets.
 
 ## Analysis Breakdown
 
